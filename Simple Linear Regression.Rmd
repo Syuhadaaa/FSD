@@ -1,0 +1,27 @@
+---
+title: "Simple Linear Reg"
+author: '19523134_Khirana , 19523016_Rio'
+date: "10/23/2020"
+output: html_document
+---
+
+```{r}
+attach(attitude)
+str(attitude)
+```
+
+```{r}
+head(attitude)
+```
+
+
+```{r}
+linear_model <- lm(rating ~ critical)
+linear_model
+summary(linear_model)
+```
+
+```{r}
+plot(linear_model)
+abline(linear_model, col = 'red')
+```
